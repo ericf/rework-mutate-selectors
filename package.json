@@ -1,0 +1,29 @@
+{
+  "name": "rework-mutate-selectors",
+  "version": "0.0.1-pre",
+  "description": "Mutate CSS selectors via Rework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericf/rework-mutate-selectors.git"
+  },
+  "keywords": [
+    "css",
+    "rework",
+    "selector",
+    "selectors",
+    "prefix",
+    "replace"
+  ],
+  "author": "Eric Ferraiuolo <eferraiuolo@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ericf/rework-mutate-selectors/issues"
+  },
+  "peerDependencies": {
+    "rework": "~0.18.1"
+  }
+}
