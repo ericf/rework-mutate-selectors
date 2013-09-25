@@ -1,7 +1,7 @@
 Rework Mutate Selectors Change History
 ======================================
 
-NEXT
-----
+0.1.0
+-----
 
 * Initial release.
