@@ -1,6 +1,6 @@
 {
   "name": "rework-mutate-selectors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mutate CSS selectors via Rework.",
   "main": "index.js",
   "scripts": {
