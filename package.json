@@ -25,5 +25,8 @@
   },
   "peerDependencies": {
     "rework": "~0.18.1"
+  },
+  "dependencies": {
+    "rework-walk": "~1.0.0"
   }
 }

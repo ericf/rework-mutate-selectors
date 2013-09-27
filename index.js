@@ -1,11 +1,13 @@
 'use strict';
 
+var walk = require('rework-walk');
+
 exports.prefix  = prefixSelector;
 exports.replace = replaceSelector;
 
 function prefixSelector(prefix) {
     return function (style) {
-        style.rules.forEach(function (rule) {
+        walk(style, function (rule) {
             if (!rule.selectors) { return; }
 
             rule.selectors = rule.selectors.map(function (selector) {
@@ -21,7 +23,7 @@ function prefixSelector(prefix) {
 
 function replaceSelector(search, replace) {
     return function (style) {
-        style.rules.forEach(function (rule) {
+        walk(style, function (rule) {
             if (!rule.selectors) { return; }
 
             rule.selectors = rule.selectors.map(function (selector) {
