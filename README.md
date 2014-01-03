@@ -1,6 +1,9 @@
 Rework Mutate Selectors
 =======================
 
+[![Dependency Status](https://gemnasium.com/ericf/rework-mutate-selectors.png)](https://gemnasium.com/ericf/rework-mutate-selectors)
+[![npm Version](https://badge.fury.io/js/rework-mutate-selectors.png)](https://npmjs.org/package/rework-mutate-selectors)
+
 Mutate CSS selectors via [Rework][].
 
 
