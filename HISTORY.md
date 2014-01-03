@@ -1,7 +1,13 @@
 Rework Mutate Selectors Change History
 ======================================
 
-1.0.0 (2014-01-04)
+1.0.1 (2014-01-03)
+------------------
+
+* Updated Rework peer dependency to v0.20.2.
+
+
+1.0.0 (2014-01-03)
 ------------------
 
 * [!] Stable.
