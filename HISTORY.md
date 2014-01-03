@@ -10,7 +10,7 @@ Rework Mutate Selectors Change History
 1.0.0 (2014-01-03)
 ------------------
 
-* [!] Stable.
+* **[!]** Stable.
 
 * Added docs to README.
 
