@@ -24,7 +24,7 @@
     "url": "https://github.com/ericf/rework-mutate-selectors/issues"
   },
   "peerDependencies": {
-    "rework": "~0.18.1"
+    "rework": "~0.20.2"
   },
   "dependencies": {
     "rework-walk": "~1.0.0"
