@@ -11,6 +11,8 @@ var walk = require('rework-walk');
 exports.prefix  = prefixSelector;
 exports.replace = replaceSelector;
 
+// -----------------------------------------------------------------------------
+
 function prefixSelector(prefix) {
     return function (style) {
         walk(style, function (rule) {
