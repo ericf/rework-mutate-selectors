@@ -6,7 +6,10 @@
 
 'use strict';
 
-var walk = require('rework-walk');
+var walk = require('rework-walk'),
+    prefixExcludeList = {
+        '@font-face': true
+    };
 
 exports.prefix  = prefixSelector;
 exports.replace = replaceSelector;
@@ -23,6 +26,9 @@ function prefixSelector(prefix) {
                     return selector.replace(/^(html|body)/, prefix);
                 }
 
+                if (prefixExcludeList[selector]) {
+                    return selector;
+                }
                 return prefix + ' ' + selector;
             });
         });
