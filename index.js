@@ -10,6 +10,7 @@ var walk = require('rework-walk');
 
 exports.prefix  = prefixSelector;
 exports.replace = replaceSelector;
+exports.functional = functionalSelector;
 
 // -----------------------------------------------------------------------------
 
@@ -36,6 +37,18 @@ function replaceSelector(search, replace) {
 
             rule.selectors = rule.selectors.map(function (selector) {
                 return selector.replace(search, replace);
+            });
+        });
+    };
+}
+
+function functionalSelector(fn) {
+    return function (style) {
+        walk(style, function (rule) {
+            if (!rule.selectors) { return; }
+
+            rule.selectors = rule.selectors.map(function (selector) {
+                return fn(selector);
             });
         });
     };

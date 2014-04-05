@@ -25,6 +25,9 @@ var rework    = require('rework'),
 var css = rework(inputCSS)
     .use(selectors.prefix('.foo'))
     .use(selectors.replace(/^\.pure/g, '.bar'))
+    .use(selectors.functional(function(selector){
+      return ".foo-" + selector + "-baz"
+    }))
     .toString();
 ```
 
