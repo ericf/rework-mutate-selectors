@@ -27,6 +27,6 @@
     "rework": "^1.0.0"
   },
   "dependencies": {
-    "rework-walk": "~1.0.0"
+    "rework-walk": "^1.0.0"
   }
 }
