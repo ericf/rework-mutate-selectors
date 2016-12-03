@@ -19,6 +19,11 @@ function prefixSelector(prefix) {
             if (!rule.selectors) { return; }
 
             rule.selectors = rule.selectors.map(function (selector) {
+                
+                if(selector.charAt(0) == '@') {
+                    return selector;
+                }
+                
                 if (selector.match(/^(html|body)/)) {
                     return selector.replace(/^(html|body)/, prefix);
                 }
